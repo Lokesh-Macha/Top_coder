@@ -1,0 +1,6 @@
+Steps taken to Optimize Rule Engine build time logic
+
+1.Tracked the current performance metrics for Rule engine build logic.
+2.Replaced the file read logic for UI and Java object mapping with Constant value there by removing the time taken for file read and JSON mapping.
+3.Removed the DB connection logic for every transaction with DB and created a common DB interaction on start up of server.
+4.Implemented the Parallel Rule Engine logic.
